@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Print your name 5 times using h1 to h5 tag dynamically at run time</title>
+    <script>
+        function show(){
+            var name = document.getElementById("name").value;
+            document.getElementById("demo1").innerHTML=name;
+            document.getElementById("demo2").innerHTML=name
+            document.getElementById("demo3").innerHTML=name
+            document.getElementById("demo4").innerHTML=name
+            document.getElementById("demo5").innerHTML=name
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>Enter your Name : </label>
+        <input type="text" id="name" ></input></br>
+        <button type="submit" onclick="show()">Submit</button>
+    </div>
+    <h1 id="demo1"></h1>
+    <h2 id="demo2"></h2>
+    <h3 id="demo3"></h3>
+    <h4 id="demo4"></h4>
+    <h5 id="demo5"></h5>
+</body>
+</html>
